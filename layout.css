@@ -1,0 +1,543 @@
+﻿
+/* Voreinstellungen */
+@charset "utf-8";
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+    background-color: #17181B; /* Light blue */
+}
+img{
+	border:0px;
+	vertical-align:top;
+	width: 100%;
+}
+html,body{
+	height:100%;
+}
+body{
+	margin:0px;
+	padding:0px;
+	background-image: url("background.jpg");
+}
+
+nav ul,nav li{
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+
+/* Ende Voreinstellungen */
+
+.wrapper{
+	max-width:100%;
+	margin:auto;
+	height:auto;
+	font-family: "rubik", sans-serif;
+}
+
+.reihe2, .reihe4, .reihe5{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.reihe1 {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color:#17181b;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%; /* Breite der reihe1 */
+}
+
+.reihe2{
+	align-items: center;
+	background-color: #0e1013;
+	justify-content: center;
+	padding: 50px;
+}
+
+.reihe3{
+	
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-image: url("blackbackground.webp");
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.reihe4{
+	align-items: center;
+	justify-content: center ;
+	background-color: #202124;
+}
+
+.reihe5{
+	background-image: url("background3.webp");
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding:25px;
+}
+
+.reihe5_1{
+	background-color: #f8f9fa;
+	width: 500px;
+	margin: auto;
+	padding: 10px;
+}
+
+.reihe6{
+	background-color: #282A2D;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding:25px;
+}
+
+.reihe7{
+	background-color: #202124;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/* Navigation */
+
+.hauptNavigation{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+	margin: auto;
+	max-width: 60%;
+}
+
+.hauptNavigation a{
+	color: #f8f9fa;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 5px 30px;
+	transition: color 0.5s;
+}
+
+.hauptNavigation a:hover{
+	color: rgb(85, 85, 85);
+}
+
+.hauptNavigation li{
+	width: 18%;
+	text-align: center;
+	font-family: "rubik", sans-serif;
+}
+
+.burger{
+	font-size: 50px;
+	font-weight: bold;
+	color:#f8f9fa;
+	display: none;
+	text-align: right;
+}
+
+/* Ende Navigation */
+
+.reihe2_1{
+	flex:50%;
+	padding: 20px;
+	align-items: center;
+	vertical-align: middle;
+	max-width: 15%;
+	min-width: 500px;
+}
+
+.reihe2_2{
+	flex:50%;
+	padding:20px;
+	max-width: 15%;
+	min-width: 500px;
+}
+
+.reihe3_1, .reihe3_2, .reihe3_3{
+	max-width: 50%;
+	padding: 20px;
+	margin: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 25%;
+	
+}
+
+.reihe3_bild{
+	width: 200px;
+	height: 200px;
+}
+
+.reihe4_1, .reihe4_2, .reihe4_3{
+	padding: 50px;
+	flex-direction: column;
+}
+
+.reihe4_bild{
+	width: 300px;
+	height: 300px;
+}
+
+.reihe5_text{
+	padding: 25px;
+	
+}
+
+.reihe4_tags{
+	display:flex;
+	flex-direction: row;
+}
+
+
+.p1{
+	font-size:64px;
+	text-align: center;
+	color: #f3f3f3;
+}
+
+.p2{
+	font-size:42px;
+	text-align: center;
+	color: #f3f3f3;
+}
+
+.p3{
+	font-size:32px;
+	text-align: center;
+	color: #f3f3f3;
+}
+
+.p4{
+	font-size: 20px;
+	text-align: center;
+	color: #f3f3f3;
+	white-space: nowrap;
+}
+
+.p5{
+	font-size: 15px;
+	text-align: center;
+	color: #f3f3f3;
+}
+
+.p6{
+	font-size: 15px;
+	text-align: left;
+	color: black;
+}
+
+.p7{
+	font-size: 15px;
+	text-align: center;
+	color: black;
+}
+
+.p8{
+	font-size: 11px;
+	text-align: center;
+	color: #f3f3f3;
+}
+
+.s1{
+	font-weight: bold;
+}
+
+.p_Gamedev, .p_Unity{
+	margin-right: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius:10px;
+	padding: 3px;
+	font-family: "rubik", sans-serif;
+	color:#0e1013;
+}
+
+.p_Gamedev{
+	background-color: #DaDce0;
+}
+
+.p_Unity{
+	background-color: #5f6368;
+}
+
+.headerContainer{
+	flex:100%;
+}
+
+.header{
+	font-size:28px;
+	text-align: center;
+	color: #f8f9fa;
+}
+
+.header2{
+	font-size:28px;
+	text-align: center;
+	color: black;
+}
+
+.platzhalter{
+	background-image: url("platzhalter.png");
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 450px;
+}
+
+/* bottom code */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+.btn{
+font-family: "rubik", sans-serif;
+font-weight: 100;
+font-size: 14px;
+color: black;
+background-color: #f8f9fa;
+padding: 10px 30px;
+border: solid #000000 2px;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+border-radius: 15px;
+transition : 521ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+}
+
+.btn:hover{
+transition : 521ms;
+padding: 10px 48px;
+transform : translateY(-0px);
+background-color: #f8f9fa;
+color: black;
+}
+
+.downloadButtom{
+	margin: auto;
+}
+
+.download_buttom
+{
+	align-self: center;
+}
+
+/* bottom code ende */
+
+/* Input Field */
+
+
+.reihe6_InputField {
+	display: flex;
+	width: 80%;
+	background-color: #f8f9fa;
+	padding: 30px;
+	margin: auto;
+}
+
+.info {
+	flex: 50%;
+}
+  
+.form {
+	flex: 50%;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: relative;
+}
+  
+.form h2 {
+	margin-top: 0;
+}
+  
+.input-container {
+	margin-bottom: 15px;
+}
+  
+.input-container label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+  
+.input-container input[type="text"],
+.input-container input[type="email"],
+.input-container textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #F1f3f4;
+	border-radius: 5px;
+	font-size: 16px;
+}
+  
+.input-container textarea {
+	resize: vertical;
+}
+  
+.submit-button {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 1%;
+}
+
+/* Input Field Ende */
+
+.notification-popup {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 200px; /* Adjust width as needed */
+	height: 40px; /* Adjust height as needed */
+	background-color: #f3f3f3;
+	border: 1px solid #F1f3f4;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	display: none;
+	z-index: 9999; /* Adjust z-index as needed */
+	font-family: "rubik", sans-serif;
+	font-weight: bold;
+}
+
+.notification-content {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* .notification-popup.success {
+    Add styling for success notification
+}
+
+.notification-popup.error {
+    Add styling for error notification
+} */
+
+
+@media only screen and (max-width:1100px)
+{
+	.reihe3{
+        flex-direction: row;
+    }
+
+    .reihe3_1, .reihe3_2{
+        max-width: 50%;
+    }
+	.reihe3_3{
+		max-width: 100%;
+	}
+
+	.hauptNavigation li{
+		
+	}
+	
+	.hauptNavigation a
+	{
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width:600px)
+{
+	
+	.burger
+	{
+		display: block;
+	}
+
+	.hauptNavigation
+	{
+		display: none;
+	}
+
+    .reihe2{
+        padding-bottom: 0px;
+    }
+    .reihe2_1{
+        width: 100%;
+    }
+
+    .reihe2_2{
+        padding: 100px;
+    }
+
+	.reihe5_1{
+		width: 90%;
+	}
+
+	.p1{
+		font-size: 50px;
+	}
+	.p2{
+		font-size: 30px;
+	}
+
+	.reihe6_InputField{
+		flex-direction: column;
+	}
+
+	.burger-wrapper {
+        flex-direction: column; /* Burger und Hauptnavigation in einer Spalte auf mobilen Geräten anzeigen */
+    }
+
+	.hauptNavigation {
+        flex-direction: column; /* Hauptnavigation in einer Spalte auf mobilen Geräten anzeigen */
+        justify-content: center; /* Zentrieren Sie die Hauptnavigation vertikal auf mobilen Geräten */
+        align-items: flex-end; /* Hauptnavigation rechts ausrichten auf mobilen Geräten */
+        position: absolute; /* Positionierung relativ zum Burger-Icon */
+        top:15px; /* Anpassen der vertikalen Positionierung */
+        right: 0; /* Positionierung am rechten Rand */
+        background-color: #17181b; /* Hintergrundfarbe der Hauptnavigation */
+        padding: 10px; /* Innenabstand der Hauptnavigation */
+        z-index: 1000; /* Stellen Sie sicher, dass die Hauptnavigation über anderen Inhalten liegt */
+        font-size: 1px;
+        display: none; /* Standardmäßig ausblenden */
+    }
+
+	.burger:hover p {
+		color:#5f6368;
+	}
+
+	.burger{
+		cursor: pointer;
+	}
+
+}
+ 
+@font-face {
+	font-family: "rubik";
+	src: url("Rubik/static/Rubik-Regular.ttf") format("truetype");
+}
+
+
+
+/* */
+
+
+.hauptNavigation.show {
+    display: block;
+}

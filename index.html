@@ -1,278 +1,232 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="layout.css">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Onepager</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Onepager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-	<script>
-		$(function() {
-			$('a[href^="#"]').click(function(e) {
-				e.preventDefault();
-				var target = $(this).attr('href');
-				var offset = $("nav").outerHeight() + 75;
-				$('html, body').animate({
-					scrollTop: $(target).offset().top - offset
-				}, 1000);
-			});
-		});
-     </script>	
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('a[href^="#"]').click(function(e) {
+                e.preventDefault();
+                var target = $(this).attr('href');
+                var offset = $("nav").outerHeight() + 75;
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top - offset
+                }, 1000);
+            });
+        });
+    </script>    
 </head>
 
 <body>
-	<div class="wrapper">	
+    <div class="wrapper">    
 
-		<div class="reihe1">
+        <div class="reihe1">
 
-			<nav class="reihe1_Liste">
-				<div class="burger" id="burger"><p class="p4">Marcel Rei </br>Navigation &#9776;</p>
-					<ul class="hauptNavigation">
-					<li> <a href="#Home">Home</a> </li>
-					<li> <a href="#Skills">Skills</a></li>
-					<li> <a href="#Projects">Projects</a></li>
-					<li> <a href="#AboutMe">About&nbsp;Me</a></li>
-					<li> <a href="#Contact">Contact</a></li>
-				</ul>
-			</nav>
+            <nav class="reihe1_Liste">
+                <div class="burger" id="burger"><p class="p4">Marcel Rei </br>Navigation &#9776;</p>
+                    <ul class="hauptNavigation">
+                    <li> <a href="#Home">Home</a> </li>
+                    <li> <a href="#Skills">Skills</a></li>
+                    <li> <a href="#Projects">Projects</a></li>
+                    <li> <a href="#AboutMe">About&nbsp;Me</a></li>
+                    <li> <a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
 
-			<nav class="reihe1_Liste">
-					<ul class="hauptNavigation">
-					<li> <a href="#Home">Home</a> </li>
-					<li> <a href="#Skills">Skills</a></li>
-					<li> <a href="#Projects">Projects</a></li>
-					<li> <a href="#AboutMe">About&nbsp;Me</a></li>
-					<li> <a href="#Contact">Contact</a></li>
-				</ul>
-			</nav>
+            <nav class="reihe1_Liste">
+                    <ul class="hauptNavigation">
+                    <li> <a href="#Home">Home</a> </li>
+                    <li> <a href="#Skills">Skills</a></li>
+                    <li> <a href="#Projects">Projects</a></li>
+                    <li> <a href="#AboutMe">About&nbsp;Me</a></li>
+                    <li> <a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
 
-			<script>
-				document.addEventListener('DOMContentLoaded', function() {
-    const burger = document.getElementById('burger');
-    const nav = document.querySelector('.hauptNavigation');
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+        const burger = document.getElementById('burger');
+        const nav = document.querySelector('.hauptNavigation');
 
-    burger.addEventListener('click', function() {
-        nav.classList.toggle('show');
+        burger.addEventListener('click', function() {
+            nav.classList.toggle('show');
 
+        });
     });
-});
-			</script>
+            </script>
 
-		</div>
+        </div>
 
-		<div class="reihe2" id="Home">
+        <div class="reihe2" id="Home">
 
-			<div class="reihe2_1">
-				<p class="p1">Marcel Rei</br><span class="p2">Unity Game Developer</span></p>
-			</div>
-			<div class="reihe2_2">
-				<img src="MarcelRei.png" alt="Marcel Rei" title="Marcel Rei" class="marcelPicture"/>
-			</div>
+            <div class="reihe2_1">
+                <p class="p1">Marcel Rei</br><span class="p2">Unity Game Developer</span></p>
+            </div>
+            <div class="reihe2_2">
+                <img src="MarcelRei.png" alt="Marcel Rei" title="Marcel Rei" class="marcelPicture"/>
+            </div>
 
-		</div>
+        </div>
 
-		
 
-		<div class="reihe3">
-			<div class="headerContainer"><p class="header" id="Skills">Skills & Experience</p></div>
-			<div class="reihe3_1">
-				<div class="reihe3_bild">
-					<img src="Unity2.png" alt="Unity Logo" title="Unity Logo"/>
-				</div>
-				<div class="reihe3_text">
-					<p class="p3">Unity Engine</p>
-					<p class="p4">Basic Knowledge in <br/>Engine and Coding</p>
-				</div>
 
-			</div>
-			<div class="reihe3_2">
-				<div class="reihe3_bild">
-					<img src="Blender2.png" alt="Blender Logo" title="Blender Logo"/>
-				</div>
-				<div class="reihe3_text">
-					<p class="p3">Blender</p>
-					<p class="p4">Basic Modelling, Shading <br/>and Lighting skills in Blender <br/> and exporting for Game Engine</p>
-				</div>
-			</div>
-			<div class="reihe3_3">
-				<div class="reihe3_bild">
-					<img src="C_Sharp_Logo_2023.svg.png" alt="Blender Logo" title="Blender Logo"/>
-				</div>
-				<div class="reihe3_text">
-					<p class="p3">C# Programming</p>
-					<p class="p4">Basic C# Programming Knowledge<br/>also some experience in java and <br/>python</p>
-				</div>
-			</div>
-		</div>
+        <div class="reihe3">
+            <div class="headerContainer"><p class="header" id="Skills">Skills & Experience</p></div>
+            <div class="reihe3_1">
+                <div class="reihe3_bild">
+                    <img src="Unity2.png" alt="Unity Logo" title="Unity Logo"/>
+                </div>
+                <div class="reihe3_text">
+                    <p class="p3">Unity Engine</p>
+                    <p class="p4">Intermediate to Advanced Knowledge<br/>in Engine and Coding</p>
+                </div>
 
-		
-		<div class="reihe4">
-			<div class="headerContainer"><p class="header" id="Projects">Personal Projects</p></div>
-			<div class="reihe4_1">
-				<div class="reihe4_bild">
-					<img src="Personal1.PNG" alt="Personal Projekt Picture" title="Personal Projekt Picture"/>
-				</div>
+            </div>
+            <div class="reihe3_2">
+                <div class="reihe3_bild">
+                    <img src="Blender2.png" alt="Blender Logo" title="Blender Logo"/>
+                </div>
+                <div class="reihe3_text">
+                    <p class="p3">Blender</p>
+                    <p class="p4">Basic Modelling, Shading <br/>and Lighting skills in Blender <br/> and exporting for Game Engine</p>
+                </div>
+            </div>
+            <div class="reihe3_3">
+                <div class="reihe3_bild">
+                    <img src="C_Sharp_Logo_2023.svg.png" alt="Blender Logo" title="Blender Logo"/>
+                </div>
+                <div class="reihe3_text">
+                    <p class="p3">C# Programming</p>
+                    <p class="p4">Intermediate to Advanced C# Programming<br/>Knowledge also some experience <br/>in java and python</p>
+                </div>
+            </div>
+        </div>
 
-				<div class="reihe4_tags">
-					<p class="p_Unity">Unity</p>
-					<p class="p_Gamedev">gamedev</p>
-				</div>
 
-				<div class="reihe4_text">
-					<p class="p5">A Crossy Roads Clone which I am<br/>currently developing, the models are <br/> provided by a class mate</p>
-				</div>
+        <div class="reihe4">
+            <div class="headerContainer"><p class="header" id="Projects">Personal Projects</p></div>
+            <div class="reihe4_1">
+                <div class="reihe4_bild">
+                    <img src="Personal1.PNG" alt="Personal Projekt Picture" title="Personal Projekt Picture"/>
+                </div>
 
-			</div>
+                <div class="reihe4_tags">
+                    <p class="p_Unity">Unity</p>
+                    <p class="p_Gamedev">gamedev</p>
+                </div>
 
-			<div class="reihe4_2">
-				<div class="reihe4_bild">
-					<img src="Personal2.PNG" alt="Personal Projekt Picture" title="Personal Projekt Picture"/>
-				</div>
+                <div class="reihe4_text">
+                    <p class="p5">A Crossy Roads Clone which I am<br/>currently developing, the models are <br/> provided by a class mate</p>
+                </div>
 
-				<div class="reihe4_tags">
-					<p class="p_Unity">Unity</p>
-					<p class="p_Gamedev">gamedev</p>
-				</div>
+            </div>
 
-				<div class="reihe4_text">
-					<p class="p5">A Chess prototyp which I developed with<br/>a classmate for a personal presentation <br/>in Game Design</p>
-				</div>
-			</div>
+            <div class="reihe4_2">
+                <div class="reihe4_bild">
+                    <img src="Personal2.PNG" alt="Personal Projekt Picture" title="Personal Projekt Picture"/>
+                </div>
 
-			<div class="reihe4_3">
-				<div class="reihe4_bild">
-					<img src="Personal3.PNG" alt="Personal Projekt Picture" title="Personal Projekt Picture"/>
-				</div>
+                <div class="reihe4_tags">
+                    <p class="p_Unity">Unity</p>
+                    <p class="p_Gamedev">gamedev</p>
+                </div>
 
-				<div class="reihe4_tags">
-					<p class="p_Unity">Unity</p>
-					<p class="p_Gamedev">gamedev</p>
-				</div>
+                <div class="reihe4_text">
+                    <p class="p5">A Chess prototyp which I developed with<br/>a classmate for a personal presentation <br/>in Game Design</p>
+                </div>
+            </div>
 
-				<div class="reihe4_text">
-					<p class="p5">A simple 2D Prototyp I developed for the<br/>IGDB Game Jam with working<br/>animations and Enemy AI</p>
-				</div>
-			</div>
+            <div class="reihe4_3">
+                <div class="reihe4_bild">
+                    <img src="MeshDeformation.gif" alt="Personal Projekt Picture" title="Personal Projekt Picture"/>
+                </div>
 
-		</div>
+                <div class="reihe4_tags">
+                    <p class="p_Unity">Unity</p>
+                    <p class="p_Gamedev">gamedev</p>
+                </div>
 
-	
+                <div class="reihe4_text">
+                    <p class="p5">A technical demo showcasing runtime <br/>mesh deformation in Unity<br/></p>
+                </div>
+            </div>
 
-		<div class="reihe5" id="AboutMe">
-			<div class="header"></div>
-			<div class="reihe5_1">
-				<div class="headerContainer"><p class="header2" id="AboutMe">About Me</p></div>
-				<div class="reihe5_text">
-					<p class="p6"> <span class="s1">I Am Marcel Rei,</span> 21 year old student who is currently studying game development at the bib International College Paderborn. </br></br> In the moment I am working on some personal
-						games while I am studying, where we also use Unity.</br></br>
+        </div>
 
-						I focus mostly on programming, because I want to expand my skills there first, in addention to this I am also learning 3d modelling and Game Design.</br></br>
-						I like to programm complex systems and trying to understand the logic behind them.
-					</p>
-				</div>
-				<div class="download_buttom">
-					<a href="MarcelReiCV.pdf" download="Marcel_Rei_CV"><button class="btn downloadButtom">Download Cv</button></a>
-				</div>
-			</div>
+        <div class="reihe4">
+            <div class="headerContainer"><p class="header" id="Projects">Professional Projects</p></div>
+            <div class="reihe4_1">
+                <div class="reihe9_bild">
+                    <img src="Toonworld.jpeg" alt="Professional Projekt Picture" title="Professional Projekt Picture"/>
+                </div>
 
-		</div>
+                <div class="reihe4_tags">
+                    <p class="p_Unity">Unity</p>
+                    <p class="p_Gamedev">gamedev</p>
+                </div>
 
-		<div class="platzhalter"></div>
+                <div class="reihe4_text">
+                    <p class="p5">Currently assisting in the development of "ToonWorld," a <br/>mobile game. Responsibilities include gameplay programming <br/>and optimizing performance for mobile platforms.</p>
+                </div>
 
-		<div class="reihe6" id="Contact">
-			<div class="headerContainer"><p class="header" id="Contact">Contact Me</p></div>
-			
-			<div class="reihe6_1">
-				<div class="reihe6_InputField">
-					<div class="info">
-						<!--<h2>Meine Informationen</h2>-->
-						<p>Marcel Rei</br></br>currently studying and living in Paderborn, Germany </br></br>marcelrei100@gmail.com</br></br>115116</p>
-					</div>
-					<div class="form">
-						<h2></h2>
-						<div class="input-container">
-							<form id="emailForm" method="post" action="run.php">
-								<label for="name"></label>
-								<input type="text" id="name" name="name" placeholder="Name" required>
-								</div>
-								<div class="input-container">
-								<label for="email"></label>
-								<input type="email" id="email" name="email" placeholder="Email" required>
-								</div>
-								<div class="input-container">
-								<label for="subject"></label>
-								<input type="text" id="subject" name="subject" placeholder="Betreff" required>
-								</div>
-								<div class="input-container">
-								<label for="message"></label>
-								<textarea id="message" name="message" placeholder="Deine Nachricht" rows="5" required></textarea>
-								</div>
-								<div class="submit-button">
-								<button type="button" id="sendButton" class="btn test">Submit</button>
-							</form>
+            </div>
 
-	<script>
-	// Function to send form data via AJAX
-	// Function to show notification
-	function showNotification(message, type) {
-    	var notificationContent = document.getElementById("notificationContent");
-    	notificationContent.textContent = message;
-    	var notificationPopup = document.getElementById("notificationPopup");
-    	notificationPopup.classList.add(type);
-    	notificationPopup.style.display = "block";
-    	// Hide notification popup after 5 seconds
+        </div>
 
-    setTimeout(function() {
-        notificationPopup.style.display = "none";
-        notificationPopup.classList.remove(type);
-    }, 5000); // Adjust the time (in milliseconds) as needed
-	}
 
-	// Function to send form data via AJAX
-	function sendEmail() {
-		var formData = new FormData(document.getElementById("emailForm"));
+        <div class="reihe5" id="AboutMe">
+            <div class="header"></div>
+            <div class="reihe5_1">
+                <div class="headerContainer"><p class="header2" id="AboutMe">About Me</p></div>
+                <div class="reihe5_text">
+                    <p class="p6"> <span class="s1">I Am Marcel Rei,</span> 21 year old student who is currently studying game development at the bib International College Paderborn. </br></br> 
+                        I am actively working on personal technical demos alongside my studies. My current focus is on learning about the VFX Graph, Shader Graph, and HLSL.</br></br>
 
-		fetch("run.php", {
-			method: "POST",
-			body: formData
-		})
-		.then(response => {
-			if (response.ok) {
-				// Email sent successfully, show success notification popup
-				showNotification("Email sent successfully.", "success");
-			} 
-			else {
-				// Failed to send email, show error notification popup
-				showNotification("Failed to send email.", "error");
-			}
-		})
-		.catch(error => {
-			// Handle any errors that occur during the AJAX request
-			console.error("Error:", error);
-			showNotification("An error occurred while sending the email.", "error");
-		});
-	}
+                        I focus mostly on programming, because I want to expand my skills there first, in addition to this I am also learning 3D modeling and Game Design.</br></br>
+                        I like to program complex systems and try to understand the logic behind them.
+                    </p>
+                </div>
+                <div class="download_buttom">
+                    <a href="MarcelReiCV.pdf" download="Marcel_Rei_CV"><button class="btn downloadButtom">Download Cv</button></a>
+                </div>
+            </div>
 
-	// Add an event listener to the send button click event
-	document.getElementById("sendButton").addEventListener("click", function(event) {
-		sendEmail();
-	});
-	</script>
-						</div>
-					</div>
-					</div>  
-				</div>
-		</div>
+        </div>
 
-		<div class="reihe7">
-			<p class="p8">Marcel Rei - Game Development Student</p>
-		</div>
-	</div>
+        <div class="platzhalter"></div>
 
-	<div id="notificationPopup" class="notification-popup">
-		<div id="notificationContent" class="notification-content"></div>
-	</div>
+        <div class="reihe6" id="Contact">
+            <div class="headerContainer"><p class="header" id="Contact">Contact Me</p></div>
+            
+            <div class="header"></div>
+            <div class="reihe5_1">
+                <div class="reihe5_text">
+                    <p class="p6">
+                        <ul>
+                            <li><strong>Name:</strong> Marcel Rei</li>
+                            <li><strong>Age:</strong> 21 years old</li>
+                            <li><strong>Email:</strong> marcelrei100@gmail.com</li>
+                            <li><strong>Location:</strong> Paderborn, Germany</li>
+                            <li><strong>Phone: + 49 176 61487058</strong></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="reihe7">
+            <p class="p8">Marcel Rei - Game Development Student</p>
+        </div>
+    </div>
+
+    <div id="notificationPopup" class="notification-popup">
+        <div id="notificationContent" class="notification-content"></div>
+    </div>
 
 </body>
 </html>
